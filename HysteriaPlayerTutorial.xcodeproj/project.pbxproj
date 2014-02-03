@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830B67CE18A0079C007161CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67CD18A0079C007161CB /* Foundation.framework */; };
+		830B67D018A0079C007161CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67CF18A0079C007161CB /* CoreGraphics.framework */; };
+		830B67D218A0079C007161CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67D118A0079C007161CB /* UIKit.framework */; };
+		830B67D818A0079C007161CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 830B67D618A0079C007161CB /* InfoPlist.strings */; };
+		830B67DA18A0079C007161CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B67D918A0079C007161CB /* main.m */; };
+		830B67DE18A0079C007161CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B67DD18A0079C007161CB /* AppDelegate.m */; };
+		830B67E118A0079C007161CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830B67DF18A0079C007161CB /* Main.storyboard */; };
+		830B67E418A0079C007161CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B67E318A0079C007161CB /* ViewController.m */; };
+		830B67E618A0079C007161CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830B67E518A0079C007161CB /* Images.xcassets */; };
+		830B67ED18A0079C007161CB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67EC18A0079C007161CB /* XCTest.framework */; };
+		830B67EE18A0079C007161CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67CD18A0079C007161CB /* Foundation.framework */; };
+		830B67EF18A0079C007161CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67D118A0079C007161CB /* UIKit.framework */; };
+		830B67F718A0079C007161CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 830B67F518A0079C007161CB /* InfoPlist.strings */; };
+		830B67F918A0079C007161CB /* HysteriaPlayerTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B67F818A0079C007161CB /* HysteriaPlayerTutorialTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		830B67F018A0079C007161CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 830B67C218A0079C007161CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830B67C918A0079C007161CB;
+			remoteInfo = HysteriaPlayerTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		830B67CA18A0079C007161CB /* HysteriaPlayerTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HysteriaPlayerTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830B67CD18A0079C007161CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		830B67CF18A0079C007161CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		830B67D118A0079C007161CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		830B67D518A0079C007161CB /* HysteriaPlayerTutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HysteriaPlayerTutorial-Info.plist"; sourceTree = "<group>"; };
+		830B67D718A0079C007161CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		830B67D918A0079C007161CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		830B67DB18A0079C007161CB /* HysteriaPlayerTutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HysteriaPlayerTutorial-Prefix.pch"; sourceTree = "<group>"; };
+		830B67DC18A0079C007161CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		830B67DD18A0079C007161CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		830B67E018A0079C007161CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		830B67E218A0079C007161CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		830B67E318A0079C007161CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		830B67E518A0079C007161CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		830B67EB18A0079C007161CB /* HysteriaPlayerTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HysteriaPlayerTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		830B67EC18A0079C007161CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		830B67F418A0079C007161CB /* HysteriaPlayerTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HysteriaPlayerTutorialTests-Info.plist"; sourceTree = "<group>"; };
+		830B67F618A0079C007161CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		830B67F818A0079C007161CB /* HysteriaPlayerTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HysteriaPlayerTutorialTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		830B67C718A0079C007161CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830B67D018A0079C007161CB /* CoreGraphics.framework in Frameworks */,
+				830B67D218A0079C007161CB /* UIKit.framework in Frameworks */,
+				830B67CE18A0079C007161CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830B67E818A0079C007161CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830B67ED18A0079C007161CB /* XCTest.framework in Frameworks */,
+				830B67EF18A0079C007161CB /* UIKit.framework in Frameworks */,
+				830B67EE18A0079C007161CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		830B67C118A0079C007161CB = {
+			isa = PBXGroup;
+			children = (
+				830B67D318A0079C007161CB /* HysteriaPlayerTutorial */,
+				830B67F218A0079C007161CB /* HysteriaPlayerTutorialTests */,
+				830B67CC18A0079C007161CB /* Frameworks */,
+				830B67CB18A0079C007161CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		830B67CB18A0079C007161CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				830B67CA18A0079C007161CB /* HysteriaPlayerTutorial.app */,
+				830B67EB18A0079C007161CB /* HysteriaPlayerTutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830B67CC18A0079C007161CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				830B67CD18A0079C007161CB /* Foundation.framework */,
+				830B67CF18A0079C007161CB /* CoreGraphics.framework */,
+				830B67D118A0079C007161CB /* UIKit.framework */,
+				830B67EC18A0079C007161CB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830B67D318A0079C007161CB /* HysteriaPlayerTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				830B67DC18A0079C007161CB /* AppDelegate.h */,
+				830B67DD18A0079C007161CB /* AppDelegate.m */,
+				830B67DF18A0079C007161CB /* Main.storyboard */,
+				830B67E218A0079C007161CB /* ViewController.h */,
+				830B67E318A0079C007161CB /* ViewController.m */,
+				830B67E518A0079C007161CB /* Images.xcassets */,
+				830B67D418A0079C007161CB /* Supporting Files */,
+			);
+			path = HysteriaPlayerTutorial;
+			sourceTree = "<group>";
+		};
+		830B67D418A0079C007161CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				830B67D518A0079C007161CB /* HysteriaPlayerTutorial-Info.plist */,
+				830B67D618A0079C007161CB /* InfoPlist.strings */,
+				830B67D918A0079C007161CB /* main.m */,
+				830B67DB18A0079C007161CB /* HysteriaPlayerTutorial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		830B67F218A0079C007161CB /* HysteriaPlayerTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				830B67F818A0079C007161CB /* HysteriaPlayerTutorialTests.m */,
+				830B67F318A0079C007161CB /* Supporting Files */,
+			);
+			path = HysteriaPlayerTutorialTests;
+			sourceTree = "<group>";
+		};
+		830B67F318A0079C007161CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				830B67F418A0079C007161CB /* HysteriaPlayerTutorialTests-Info.plist */,
+				830B67F518A0079C007161CB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		830B67C918A0079C007161CB /* HysteriaPlayerTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830B67FC18A0079C007161CB /* Build configuration list for PBXNativeTarget "HysteriaPlayerTutorial" */;
+			buildPhases = (
+				830B67C618A0079C007161CB /* Sources */,
+				830B67C718A0079C007161CB /* Frameworks */,
+				830B67C818A0079C007161CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HysteriaPlayerTutorial;
+			productName = HysteriaPlayerTutorial;
+			productReference = 830B67CA18A0079C007161CB /* HysteriaPlayerTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		830B67EA18A0079C007161CB /* HysteriaPlayerTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830B67FF18A0079C007161CB /* Build configuration list for PBXNativeTarget "HysteriaPlayerTutorialTests" */;
+			buildPhases = (
+				830B67E718A0079C007161CB /* Sources */,
+				830B67E818A0079C007161CB /* Frameworks */,
+				830B67E918A0079C007161CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830B67F118A0079C007161CB /* PBXTargetDependency */,
+			);
+			name = HysteriaPlayerTutorialTests;
+			productName = HysteriaPlayerTutorialTests;
+			productReference = 830B67EB18A0079C007161CB /* HysteriaPlayerTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		830B67C218A0079C007161CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = saiday;
+				TargetAttributes = {
+					830B67EA18A0079C007161CB = {
+						TestTargetID = 830B67C918A0079C007161CB;
+					};
+				};
+			};
+			buildConfigurationList = 830B67C518A0079C007161CB /* Build configuration list for PBXProject "HysteriaPlayerTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 830B67C118A0079C007161CB;
+			productRefGroup = 830B67CB18A0079C007161CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				830B67C918A0079C007161CB /* HysteriaPlayerTutorial */,
+				830B67EA18A0079C007161CB /* HysteriaPlayerTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		830B67C818A0079C007161CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830B67E618A0079C007161CB /* Images.xcassets in Resources */,
+				830B67D818A0079C007161CB /* InfoPlist.strings in Resources */,
+				830B67E118A0079C007161CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830B67E918A0079C007161CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830B67F718A0079C007161CB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		830B67C618A0079C007161CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830B67E418A0079C007161CB /* ViewController.m in Sources */,
+				830B67DE18A0079C007161CB /* AppDelegate.m in Sources */,
+				830B67DA18A0079C007161CB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830B67E718A0079C007161CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830B67F918A0079C007161CB /* HysteriaPlayerTutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		830B67F118A0079C007161CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830B67C918A0079C007161CB /* HysteriaPlayerTutorial */;
+			targetProxy = 830B67F018A0079C007161CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		830B67D618A0079C007161CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830B67D718A0079C007161CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		830B67DF18A0079C007161CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830B67E018A0079C007161CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		830B67F518A0079C007161CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830B67F618A0079C007161CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		830B67FA18A0079C007161CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		830B67FB18A0079C007161CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		830B67FD18A0079C007161CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HysteriaPlayerTutorial/HysteriaPlayerTutorial-Prefix.pch";
+				INFOPLIST_FILE = "HysteriaPlayerTutorial/HysteriaPlayerTutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		830B67FE18A0079C007161CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HysteriaPlayerTutorial/HysteriaPlayerTutorial-Prefix.pch";
+				INFOPLIST_FILE = "HysteriaPlayerTutorial/HysteriaPlayerTutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		830B680018A0079C007161CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HysteriaPlayerTutorial.app/HysteriaPlayerTutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HysteriaPlayerTutorial/HysteriaPlayerTutorial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HysteriaPlayerTutorialTests/HysteriaPlayerTutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		830B680118A0079C007161CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HysteriaPlayerTutorial.app/HysteriaPlayerTutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HysteriaPlayerTutorial/HysteriaPlayerTutorial-Prefix.pch";
+				INFOPLIST_FILE = "HysteriaPlayerTutorialTests/HysteriaPlayerTutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		830B67C518A0079C007161CB /* Build configuration list for PBXProject "HysteriaPlayerTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830B67FA18A0079C007161CB /* Debug */,
+				830B67FB18A0079C007161CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830B67FC18A0079C007161CB /* Build configuration list for PBXNativeTarget "HysteriaPlayerTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830B67FD18A0079C007161CB /* Debug */,
+				830B67FE18A0079C007161CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		830B67FF18A0079C007161CB /* Build configuration list for PBXNativeTarget "HysteriaPlayerTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830B680018A0079C007161CB /* Debug */,
+				830B680118A0079C007161CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 830B67C218A0079C007161CB /* Project object */;
+}
