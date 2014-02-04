@@ -1,0 +1,6 @@
+*.xcuserstat
+*.xcuserstate
+.DS_Store
+Pods/
+DerivedData/
+*.xcworkspace/

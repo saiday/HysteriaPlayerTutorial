@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)PreviewU2:(id)sender;
+- (IBAction)previewJackJohnson:(id)sender;
+
 @end

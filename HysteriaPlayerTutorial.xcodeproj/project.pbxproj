@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		517F7B6874014AC7BD1DEB32 /* libPods-HysteriaPlayerTutorial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96192ED19F794050803C2C50 /* libPods-HysteriaPlayerTutorial.a */; };
 		830B67CE18A0079C007161CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67CD18A0079C007161CB /* Foundation.framework */; };
 		830B67D018A0079C007161CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67CF18A0079C007161CB /* CoreGraphics.framework */; };
 		830B67D218A0079C007161CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67D118A0079C007161CB /* UIKit.framework */; };
@@ -21,6 +22,8 @@
 		830B67EF18A0079C007161CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B67D118A0079C007161CB /* UIKit.framework */; };
 		830B67F718A0079C007161CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 830B67F518A0079C007161CB /* InfoPlist.strings */; };
 		830B67F918A0079C007161CB /* HysteriaPlayerTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B67F818A0079C007161CB /* HysteriaPlayerTutorialTests.m */; };
+		830B680718A153C6007161CB /* PlayingItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B680618A153C6007161CB /* PlayingItems.m */; };
+		830B680A18A15AF3007161CB /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B680918A15AF3007161CB /* Song.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		830B67F418A0079C007161CB /* HysteriaPlayerTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HysteriaPlayerTutorialTests-Info.plist"; sourceTree = "<group>"; };
 		830B67F618A0079C007161CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		830B67F818A0079C007161CB /* HysteriaPlayerTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HysteriaPlayerTutorialTests.m; sourceTree = "<group>"; };
+		830B680518A153C6007161CB /* PlayingItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingItems.h; sourceTree = "<group>"; };
+		830B680618A153C6007161CB /* PlayingItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingItems.m; sourceTree = "<group>"; };
+		830B680818A15AF3007161CB /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		830B680918A15AF3007161CB /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		96192ED19F794050803C2C50 /* libPods-HysteriaPlayerTutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HysteriaPlayerTutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B749681AB8C8458CB7B5027E /* Pods-HysteriaPlayerTutorial.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HysteriaPlayerTutorial.xcconfig"; path = "Pods/Pods-HysteriaPlayerTutorial.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 				830B67D018A0079C007161CB /* CoreGraphics.framework in Frameworks */,
 				830B67D218A0079C007161CB /* UIKit.framework in Frameworks */,
 				830B67CE18A0079C007161CB /* Foundation.framework in Frameworks */,
+				517F7B6874014AC7BD1DEB32 /* libPods-HysteriaPlayerTutorial.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 				830B67F218A0079C007161CB /* HysteriaPlayerTutorialTests */,
 				830B67CC18A0079C007161CB /* Frameworks */,
 				830B67CB18A0079C007161CB /* Products */,
+				B749681AB8C8458CB7B5027E /* Pods-HysteriaPlayerTutorial.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +116,7 @@
 				830B67CF18A0079C007161CB /* CoreGraphics.framework */,
 				830B67D118A0079C007161CB /* UIKit.framework */,
 				830B67EC18A0079C007161CB /* XCTest.framework */,
+				96192ED19F794050803C2C50 /* libPods-HysteriaPlayerTutorial.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +129,10 @@
 				830B67DF18A0079C007161CB /* Main.storyboard */,
 				830B67E218A0079C007161CB /* ViewController.h */,
 				830B67E318A0079C007161CB /* ViewController.m */,
+				830B680518A153C6007161CB /* PlayingItems.h */,
+				830B680618A153C6007161CB /* PlayingItems.m */,
+				830B680818A15AF3007161CB /* Song.h */,
+				830B680918A15AF3007161CB /* Song.m */,
 				830B67E518A0079C007161CB /* Images.xcassets */,
 				830B67D418A0079C007161CB /* Supporting Files */,
 			);
@@ -159,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 830B67FC18A0079C007161CB /* Build configuration list for PBXNativeTarget "HysteriaPlayerTutorial" */;
 			buildPhases = (
+				80BF0444EDF747FB97D8B8E1 /* Check Pods Manifest.lock */,
 				830B67C618A0079C007161CB /* Sources */,
 				830B67C718A0079C007161CB /* Frameworks */,
 				830B67C818A0079C007161CB /* Resources */,
+				9C19A64B9AE849A8889029BC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +217,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = saiday;
 				TargetAttributes = {
+					830B67C918A0079C007161CB = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					830B67EA18A0079C007161CB = {
 						TestTargetID = 830B67C918A0079C007161CB;
 					};
@@ -244,14 +269,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80BF0444EDF747FB97D8B8E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C19A64B9AE849A8889029BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-HysteriaPlayerTutorial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		830B67C618A0079C007161CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830B680A18A15AF3007161CB /* Song.m in Sources */,
 				830B67E418A0079C007161CB /* ViewController.m in Sources */,
 				830B67DE18A0079C007161CB /* AppDelegate.m in Sources */,
 				830B67DA18A0079C007161CB /* main.m in Sources */,
+				830B680718A153C6007161CB /* PlayingItems.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +435,7 @@
 		};
 		830B67FD18A0079C007161CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B749681AB8C8458CB7B5027E /* Pods-HysteriaPlayerTutorial.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -388,6 +449,7 @@
 		};
 		830B67FE18A0079C007161CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B749681AB8C8458CB7B5027E /* Pods-HysteriaPlayerTutorial.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -460,6 +522,7 @@
 				830B67FE18A0079C007161CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		830B67FF18A0079C007161CB /* Build configuration list for PBXNativeTarget "HysteriaPlayerTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +531,7 @@
 				830B680118A0079C007161CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
