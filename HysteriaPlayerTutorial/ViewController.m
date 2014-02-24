@@ -80,9 +80,10 @@
         }
     }
     
-    [[HysteriaPlayer sharedInstance] setupSourceGetter:^NSString *(NSUInteger index) {
+    [[HysteriaPlayer sharedInstance] setupSourceGetter:^NSURL *(NSUInteger index) {
         Song *object = [[playingItems queueItems] objectAtIndex:index];
-        return object.source;
+        NSURL *url = [NSURL URLWithString:object.source];
+        return url;
     } ItemsCount:[[playingItems queueItems] count]];
     
     // play
