@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "PlayingItems.h"
-#import "Song.h"
-#import <HysteriaPlayer.h>
+#import "HysteriaPlayerManager.h"
 #import <AFNetworking/AFHTTPRequestOperationManager.h>
 
 @implementation ViewController
@@ -17,84 +15,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self setupHyseteriaPlayer];
-}
-
-- (void)setupHyseteriaPlayer
-{
-    HysteriaPlayer *hysteriaPlayer = [HysteriaPlayer sharedInstance];
-    
-    [hysteriaPlayer registerHandlerPlayerRateChanged:^{
-        
-    } CurrentItemChanged:^(AVPlayerItem *item) {
-        
-    } PlayerDidReachEnd:^{
-        
-    }];
-    
-    [hysteriaPlayer registerHandlerCurrentItemPreLoaded:^(CMTime time) {
-        NSLog(@"%f", CMTimeGetSeconds(time));
-    }];
-    
-    [hysteriaPlayer registerHandlerReadyToPlay:^(HysteriaPlayerReadyToPlay identifier) {
-        switch (identifier) {
-            case HysteriaPlayerReadyToPlayCurrentItem:
-                if ([hysteriaPlayer getHysteriaPlayerStatus] != HysteriaPlayerStatusForcePause) {
-                    [hysteriaPlayer play];
-                }
-                break;
-            case HysteriaPlayerReadyToPlayPlayer:
-                [hysteriaPlayer play];
-                break;
-                
-            default:
-                break;
-        }
-    }];
-    
-    [hysteriaPlayer registerHandlerFailed:^(HysteriaPlayerFailed identifier, NSError *error) {
-        switch (identifier) {
-            case HysteriaPlayerFailedCurrentItem:
-                break;
-                
-            default:
-                break;
-        }
-    }];
-    
-    [hysteriaPlayer setPlayerRepeatMode:RepeatMode_off];
-    [hysteriaPlayer enableMemoryCached:NO];
-}
-
-- (void)setupNewSourceGetter:(id)responseObject
-{
-    PlayingItems *playingItems = [PlayingItems sharedInstance];
-    [playingItems setQueueItems:[NSMutableArray array]];
-    
-    NSArray *JSONData = [responseObject objectForKey:@"results"];
-    for (NSDictionary *songData in JSONData) {
-        Song *object = [Song initWithData:songData];
-        if (object) {
-            [[playingItems queueItems] addObject:object];
-        }
-    }
-    
-    [[HysteriaPlayer sharedInstance] setupSourceGetter:^NSURL *(NSUInteger index) {
-        Song *object = [[playingItems queueItems] objectAtIndex:index];
-        NSURL *url = [NSURL URLWithString:object.source];
-        return url;
-    } ItemsCount:[[playingItems queueItems] count]];
-    
-    // play
-    [[HysteriaPlayer sharedInstance] fetchAndPlayPlayerItem:0];
 }
 
 - (void)getPreviews:(NSString *)itunesAPI
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:itunesAPI parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [self setupNewSourceGetter:responseObject];
+        [[HysteriaPlayerManager sharedInstance] setupNewSourceGetter:responseObject];
         
     } failure:nil];
 }

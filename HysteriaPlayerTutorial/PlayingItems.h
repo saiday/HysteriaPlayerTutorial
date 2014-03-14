@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Song;
 
 @interface PlayingItems : NSObject
 
 + (instancetype)sharedInstance;
+
+- (Song *)getCurrentSong;
 
 @property (nonatomic, strong) NSMutableArray *queueItems;
 

@@ -36,12 +36,92 @@
                                     <action selector="previewJackJohnson:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gmz-m7-OYS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX0-9G-htx">
+                                <rect key="frame" x="117" y="370" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open Player">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cmw-K7-Xbu" kind="modal" id="P6A-nF-56f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="180" y="135"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="xUJ-Mq-smh">
+            <objects>
+                <viewController id="xhI-6k-ZuS" customClass="PlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yo3-Uk-FXW"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Zt-BG-2xC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E0F-js-OI8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hh-PU-fOe" customClass="SpinningDiskView">
+                                <rect key="frame" x="5" y="129" width="310" height="310"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="P9n-Py-Go6"/>
+                                    <constraint firstAttribute="height" constant="310" id="TiJ-jE-Kt2"/>
+                                </constraints>
+                            </view>
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="P4f-tG-hLk">
+                                <rect key="frame" x="18" y="403" width="284" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="XAR-A6-w21">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9hh-PU-fOe" firstAttribute="top" secondItem="Yo3-Uk-FXW" secondAttribute="bottom" constant="65" id="LBD-MG-obC"/>
+                            <constraint firstItem="9hh-PU-fOe" firstAttribute="leading" secondItem="E0F-js-OI8" secondAttribute="leading" constant="5" id="Ukc-Pg-has"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Ch-ja-Z4I">
+                        <barButtonItem key="rightBarButtonItem" title="Close" id="G2R-le-66d">
+                            <connections>
+                                <action selector="close:" destination="xhI-6k-ZuS" id="jx6-OK-ca1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="slider" destination="P4f-tG-hLk" id="p8I-un-BFj"/>
+                        <outlet property="spinningDiskView" destination="9hh-PU-fOe" id="Y7Y-7G-H7d"/>
+                        <outlet property="toolbar" destination="XAR-A6-w21" id="h0p-rq-z9C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRd-LY-ZO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="18o-ns-Etm">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Cmw-K7-Xbu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EDt-dj-kui">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xhI-6k-ZuS" kind="relationship" relationship="rootViewController" id="Xma-jK-Qnn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INl-Dl-dVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="148"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -7,6 +7,8 @@
 //
 
 #import "PlayingItems.h"
+#import "Song.h"
+#import <HysteriaPlayer.h>
 
 @implementation PlayingItems
 
@@ -19,6 +21,19 @@
     });
     
     return sharedInstance;
+}
+
+- (Song *)getCurrentSong
+{
+    Song *item = nil;
+    
+    if (self.queueItems.count) {
+        HysteriaPlayer *hysteriaPlayer = [HysteriaPlayer sharedInstance];
+        NSUInteger index = [[hysteriaPlayer getHysteriaOrder:[hysteriaPlayer getCurrentItem]] integerValue];
+        item = (Song *)[self.queueItems objectAtIndex:index];
+    }
+    
+    return item;
 }
 
 @end

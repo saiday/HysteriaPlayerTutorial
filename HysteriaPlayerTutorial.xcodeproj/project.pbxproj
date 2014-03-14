@@ -24,6 +24,12 @@
 		830B67F918A0079C007161CB /* HysteriaPlayerTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B67F818A0079C007161CB /* HysteriaPlayerTutorialTests.m */; };
 		830B680718A153C6007161CB /* PlayingItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B680618A153C6007161CB /* PlayingItems.m */; };
 		830B680A18A15AF3007161CB /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B680918A15AF3007161CB /* Song.m */; };
+		83C646A718BB8858002E413B /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C646A618BB8858002E413B /* PlayerViewController.m */; };
+		83C646AA18BB90CE002E413B /* HysteriaPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C646A918BB90CE002E413B /* HysteriaPlayerManager.m */; };
+		83C646B018BCE300002E413B /* Next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83C646AC18BCE300002E413B /* Next@2x.png */; };
+		83C646B118BCE300002E413B /* Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83C646AD18BCE300002E413B /* Pause@2x.png */; };
+		83C646B218BCE300002E413B /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83C646AE18BCE300002E413B /* Play@2x.png */; };
+		83C646B318BCE300002E413B /* Previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83C646AF18BCE300002E413B /* Previous@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,14 @@
 		830B680618A153C6007161CB /* PlayingItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingItems.m; sourceTree = "<group>"; };
 		830B680818A15AF3007161CB /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
 		830B680918A15AF3007161CB /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		83C646A518BB8858002E413B /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		83C646A618BB8858002E413B /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		83C646A818BB90CE002E413B /* HysteriaPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HysteriaPlayerManager.h; sourceTree = "<group>"; };
+		83C646A918BB90CE002E413B /* HysteriaPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HysteriaPlayerManager.m; sourceTree = "<group>"; };
+		83C646AC18BCE300002E413B /* Next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next@2x.png"; sourceTree = "<group>"; };
+		83C646AD18BCE300002E413B /* Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause@2x.png"; sourceTree = "<group>"; };
+		83C646AE18BCE300002E413B /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
+		83C646AF18BCE300002E413B /* Previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Previous@2x.png"; sourceTree = "<group>"; };
 		96192ED19F794050803C2C50 /* libPods-HysteriaPlayerTutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HysteriaPlayerTutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B749681AB8C8458CB7B5027E /* Pods-HysteriaPlayerTutorial.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HysteriaPlayerTutorial.xcconfig"; path = "Pods/Pods-HysteriaPlayerTutorial.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,8 +145,12 @@
 				830B67E318A0079C007161CB /* ViewController.m */,
 				830B680518A153C6007161CB /* PlayingItems.h */,
 				830B680618A153C6007161CB /* PlayingItems.m */,
+				83C646A818BB90CE002E413B /* HysteriaPlayerManager.h */,
+				83C646A918BB90CE002E413B /* HysteriaPlayerManager.m */,
 				830B680818A15AF3007161CB /* Song.h */,
 				830B680918A15AF3007161CB /* Song.m */,
+				83C646A518BB8858002E413B /* PlayerViewController.h */,
+				83C646A618BB8858002E413B /* PlayerViewController.m */,
 				830B67E518A0079C007161CB /* Images.xcassets */,
 				830B67D418A0079C007161CB /* Supporting Files */,
 			);
@@ -142,6 +160,7 @@
 		830B67D418A0079C007161CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83C646AB18BCE300002E413B /* images */,
 				830B67D518A0079C007161CB /* HysteriaPlayerTutorial-Info.plist */,
 				830B67D618A0079C007161CB /* InfoPlist.strings */,
 				830B67D918A0079C007161CB /* main.m */,
@@ -166,6 +185,17 @@
 				830B67F518A0079C007161CB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83C646AB18BCE300002E413B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				83C646AC18BCE300002E413B /* Next@2x.png */,
+				83C646AD18BCE300002E413B /* Pause@2x.png */,
+				83C646AE18BCE300002E413B /* Play@2x.png */,
+				83C646AF18BCE300002E413B /* Previous@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +244,7 @@
 		830B67C218A0079C007161CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = saiday;
 				TargetAttributes = {
 					830B67C918A0079C007161CB = {
@@ -253,9 +283,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C646B218BCE300002E413B /* Play@2x.png in Resources */,
+				83C646B018BCE300002E413B /* Next@2x.png in Resources */,
 				830B67E618A0079C007161CB /* Images.xcassets in Resources */,
+				83C646B118BCE300002E413B /* Pause@2x.png in Resources */,
 				830B67D818A0079C007161CB /* InfoPlist.strings in Resources */,
 				830B67E118A0079C007161CB /* Main.storyboard in Resources */,
+				83C646B318BCE300002E413B /* Previous@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +346,8 @@
 				830B67DE18A0079C007161CB /* AppDelegate.m in Sources */,
 				830B67DA18A0079C007161CB /* main.m in Sources */,
 				830B680718A153C6007161CB /* PlayingItems.m in Sources */,
+				83C646A718BB8858002E413B /* PlayerViewController.m in Sources */,
+				83C646AA18BB90CE002E413B /* HysteriaPlayerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +401,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -404,7 +439,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -464,7 +498,6 @@
 		830B680018A0079C007161CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HysteriaPlayerTutorial.app/HysteriaPlayerTutorial";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -487,7 +520,6 @@
 		830B680118A0079C007161CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HysteriaPlayerTutorial.app/HysteriaPlayerTutorial";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
